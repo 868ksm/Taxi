@@ -1,13 +1,588 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.golova{
+font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffc107;;
 }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:lightblue; 
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  height:40px  ;
+  font-family: "Jaro", sans-serif;
+}
+
+
+.logo span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffc107;
+  cursor: default;
+}
+
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: white; 
+}
+
+.phone a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffc107;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.phone a:hover {
+  color: white; 
+}
+.navbar {
+  background-color: #222; /* Цвет фона */
+  height: 100px; /* Увеличиваем высоту хедера */
+  display: flex;
+  align-items: center; /* Выравниваем элементы по вертикали */
+  justify-content: space-between; /* Равномерное распределение элементов */
+  padding: 20px 50px; /* Отступы внутри */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для выделения */
+  font-family: "Jaro", sans-serif;
+}
+
+.navbar .logo span {
+  font-size: 32px; /* Увеличиваем размер логотипа */
+  color: yellow; /* Цвет текста логотипа */
+  font-weight: bold;
+}
+
+.navbar .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Расстояние между пунктами меню */
+}
+
+.navbar .menu ul li a {
+  text-decoration: none;
+  color: white; /* Цвет текста меню */
+  font-size: 18px; /* Размер текста */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .menu ul li a:hover {
+  color: yellow; /* Цвет при наведении */
+}
+
+.navbar .phone a {
+  font-size: 18px;
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sh{
+  width: 1000px; 
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.tx{
+  display: flex;
+  justify-content: center;
+  margin:  55px; ;
+}
+.sc{
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+}
+.about{
+  font-family: "Jaro", sans-serif;
+color: #ffc107;
+font-size: 80px   ;
+cursor: default;
+}
+.pp{
+  background-color: #222;
+  padding-bottom: 50px;
+  font-size: 500%;
+  cursor: default;
+}
+.lor{
+  text-align: center; 
+      font-size: 50%; 
+      line-height: 1.6; 
+      margin: 50px; 
+      color: #ffc107;
+      margin-top: 10px;
+      font-family: "Jaro", sans-serif;
+}
+/* Footer Styling */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Roboto', sans-serif;
+  cursor: default;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #f9c937; /* Жёлтый оттенок */
+}
+
+.footer-contact h3, .footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p, .footer-social a {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.footer-contact a {
+  color: #f9c937;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a img {
+  width: 32px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+.tel{
+  width: 200px;
+  height:200px ;
+}
+.call{
+  display: flex;
+  align-items: baseline;
+  cursor: default;
+}
+.sat{
+  margin-left: 25px;
+  font-weight:250;
+}
+.us{
+  font-family: "Jaro", sans-serif;
+  font-size: 80px;
+}
+span .red{
+  font-family: "Jaro", sans-serif;
+  font-size: 80px;
+}
+.gf{
+  width: 300px;
+  height: 300px;
+}
+.rabota{
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.fg{
+  font-family: "Jaro", sans-serif;
+  color:#f9c937 ;
+  transition: background-color 0.3s ease;
+  border: solid 5px;
+  border-color: #f9c937;
+  border-radius: 10px;
+}
+.fg:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.ms;
+  color: grey; 
+}
+.down{
+  width: 300px;
+  height: 300px;
+}
+.download{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.app{
+  font-family: "Jaro", sans-serif;
+  color: #222;
+  position: relative;
+  top: 100px;
+  transition: background-color 0.3s ease;
+  border: solid 5px;
+  border-color: #222;
+  border-radius: 10px;
+  margin-right:  50px;
+  margin-left: 30px ;
+}
+.app:hover{
+transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.ms;
+  color: grey;   
+}
+a{
+  text-decoration: none;
+}
+.hj{
+  font-family: "Jaro", sans-serif;
+  font-size: 700%;
+  text-align: center;
+  color: #ffc107;
+  background-color: #222;
+}
+.review-container {
+  display: flex; /* Расположение карточек в строку */
+  justify-content: space-around; /* Равномерное распределение между карточками */
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Общий стиль для карточек */
+.review-card {
+  background-color:#ffc107;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ховер эффект */
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль для изображения */
+.review-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Заголовок (имя клиента) */
+.review-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Текст отзыва */
+.review-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+.otzg{
+  display: flex;
+  justify-content: space-around;
+  background-color: #222;
+}
+.vv{
+  background-color: #222;
+  padding-bottom: 100px;
+  cursor: default;
+}
+/* Секция для кнопки оставить отзыв */
+.leave-review {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Стили кнопки */
+.btn-leave-review {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leave-review:hover {
+  background-color: #cc7a00;
+}
+/* Секция для блока с отзывами */
+.vv {
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Карточки отзывов */
+.otzg {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+/* Каждая карточка */
+.review-card {
+  background-color: #ffc107;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.review-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Кнопка оставить отзыв */
+.leave-review {
+  background-color: #222;
+  margin-top: 0;
+}
+
+.btn-leave-review {
+  background-color:#ffc107 ;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-leave-review:hover {
+  background-color: #cc7a00;
+}
+.dos{
+  width: 400px;
+  height: 400px ;
+}
+.bn{
+  font-family: "Jaro", sans-serif;
+  position: relative;
+  top: 100px;
+  transition: background-color 0.3s ease;
+  color:#ffc107 ;
+  margin-top: 175px;
+  border: solid 5px;
+  border-radius: 10px;
+  border-color: #ffc107 ;
+}
+.bn:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.ms;
+  color: grey; 
+}
+
+.dil{
+  display: flex;
+  justify-content: center;
+}
+.bn:a{
+  text-decoration: none;
+}
+.dil{
+  background-color: #222;
+}
+.bu{
+  width: 300px;
+  height: 300px;  
+}
+.kl{
+  background-color: #ffc107;
+  display: flex;
+  align-items: baseline;
+}
+.lm{
+  color: black;
+  margin-bottom: -300px;
+}
+.lm:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.ms;
+  color: grey;
+}
+
+
+.modal {
+  display: none; /* Скрываем окно по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Включаем прокрутку */
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнённый фон */
+}
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* Располагаем содержимое по центру */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 80vh; /* Ограничиваем высоту содержимого */
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.eco{
+width: auto;
+height: auto;
+box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+border-radius: 20px; 
+margin-top: 150px;
+}
+.econom{
+display: flex;
+justify-content: center;
+
+}
+/* Стили для содержимого модального окна */
+
+
+/* Стили для кнопки закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Стили для формы */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 50px; 
+  width: 150px;
+  height: 70px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border-radius: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: grey;
+}
+.zakaz{
+display: flex;
+justify-content: center;
+}
+.bee{
+  width: 50px; 
+  height: 50px;
+  margin-top: 0;
+}
+

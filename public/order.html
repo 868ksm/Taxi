@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать такси</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="econom">
+  <img class="eco" src="img/economy-class-cars-for-rent-in-alanya-2.webp" alt="">
+</div>
+    <!-- Кнопка для открытия формы заказа такси -->
+    <div class="zakaz">
+    <button id="orderTaxiBtn">Заказать такси</button>
+
+    <!-- Модальное окно для заказа такси -->
+    <div id="taxiModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <h2>Форма заказа такси</h2>
+            <form id="taxiForm">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="phone">Номер телефона:</label>
+                <input type="text" id="phone" name="phone" required><br><br>
+                
+                <label for="pickup">Адрес подачи:</label>
+                <input type="text" id="pickup" name="pickup" required><br><br>
+                
+                <label for="destination">Адрес назначения:</label>
+                <input type="text" id="destination" name="destination" required><br><br>
+                
+                <button type="submit">Отправить заказ</button>
+            </form>
+        </div>
+    </div>
+  </div>
+<style>
+  /* Основные стили для модального окна */
+.modal {
+    display: none; /* Скрыть окно по умолчанию */
+    position: fixed;
+    z-index: 1; /* Окно поверх всех других элементов */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+}
+.eco{
+  width: auto;
+  height: auto;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px; 
+}
+.econom{
+  display: flex;
+  justify-content: center;
+}
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.zakaz{
+  display: flex;
+  justify-content: center;
+}
+</style>
+    <script src="zakaz.js"></script>
+</body>
+</html>

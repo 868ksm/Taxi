@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить отзыв</title>
+    <link rel="stylesheet" href="review-form.css">
+</head>
+<body>
+   
+  <style>
+    /* Общий стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер формы */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Заголовок */
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Форм-группы */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Метки */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Поля ввода */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Текстовое поле */
+.form-group textarea {
+    resize: none;
+}
+
+/* Рейтинг */
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Ховер для кнопки */
+.submit-btn:hover {
+    background-color: #cc7a00;
+}
+.golova{
+    display: flex;
+    justify-content: center;
+}
+  </style>
+    <div class="form-container">
+        <h1>Оставьте ваш отзыв</h1>
+        <form action="#" method="post" class="review-form">
+            <!-- Имя -->
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+            </div>
+
+            <!-- Фото -->
+            <div class="form-group">
+                <label for="photo">Добавить фото (опционально):</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <!-- Отзыв -->
+            <div class="form-group">
+                <label for="review">Ваш отзыв:</label>
+                <textarea id="review" name="review" rows="5" placeholder="Напишите ваш отзыв здесь..." required></textarea>
+            </div>
+
+            <!-- Оценка -->
+            <div class="form-group">
+                <label>Оцените сервис:</label>
+                <div class="rating">
+                    <label>
+                        <input type="radio" name="rating" value="1"> 1
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="2"> 2
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="3"> 3
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="4"> 4
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="5" checked> 5
+                    </label>
+                </div>
+            </div>
+
+            <!-- Кнопка отправки -->
+            <button type="submit" class="submit-btn">Отправить отзыв</button>
+        </form>
+    </div>
+</body>
+</html>
